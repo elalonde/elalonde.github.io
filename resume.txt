@@ -1,0 +1,61 @@
+Eric Lalonde
+Systems developer | Idaho, USA
+eric AT lalonde DOT com  github.com/elalonde  elalonde.dev
+
+SUMMARY
+  16 years of experience in userland systems development.
+
+EXPERIENCE
+  Member of Technical Staff, Definitive Intelligence (acquired by Groq)
+  2022-2023
+    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
+
+  Member of Technical Staff, Autonomic (acquired by Ford)      2016-2022
+    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
+
+  Sr. Principal Software Engineer, Pivotal                     2015-2016
+    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
+
+  Consulting Engineer, Pivotal                                 2013-2015
+    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
+
+  Senior Linux Engineer, Axcient                               2009-2013
+    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
+
+  R&D Engineer, Sun Microsystems                               2007-2009
+    Project Live*: modular software distribution and configuration for
+    data-center systems.
+
+PROJECTS
+  libsig1   Signal linked-device client library in C. Clean room.
+  puron     COSMIC panel sensor applet. A rewrite of GNOME Freon.
+  eos       i386 Multiboot kernel written by hand in NASM assembly.
+  jig       Build system for software that agents write.
+
+SKILLS
+  Languages   C, x86 assembly (NASM), Bash, Java
+  Frameworks  gRPC, Spring
+
+EDUCATION
+  M.S., Computer Science, University of California, Santa Cruz, 2007
+
+PUBLICATIONS
+  Using Comprehensive Analysis for Performance Debugging in Distributed
+    Storage Systems
+    IEEE MSST 2007  https://ieeexplore.ieee.org/document/4367986
+
+PATENTS
+  Systems and Methods for Maintaining a Virtual Failover Volume of a
+    Target Computing System
+    US 9,235,474  https://patents.google.com/patent/US9235474B1
+  Systems, methods, and media for synthesizing views of file system
+    backups
+    US 8,589,350  https://patents.google.com/patent/US8589350B1
+    US 9,213,607  https://patents.google.com/patent/US9213607B2
+  Performing global computation in distributed database systems
+    US 10,885,064  https://patents.google.com/patent/US10885064B2
+  Method and system for configuring software modules to execute in an
+    execution environment
+    US 8,302,077  https://patents.google.com/patent/US8302077B2
+
+elalonde.dev/resume | updated 2026-11-15

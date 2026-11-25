@@ -1,0 +1,27 @@
+/* elalonde.dev colors: autumn. Only this file changes between schemes. */
+:root{
+color-scheme:dark;
+--bg:#332e28;
+--surface:#463e34;
+--rule:#8a6f48;
+--fg:#e6dcc0;
+--bright:#fbf1d6;
+--dim:#b8ab90;
+--accent:#ee9a4d;
+--link:#b9cf87;
+--warn:#ff8787;
+--active-line:#ee9a4d;
+--active-title:#ee9a4d;
+--active-title-bg:transparent;
+--active-title-pad:0;
+--bar-bg:#ee9a4d;
+--bar-fg:#332e28;
+--chip-bg:#332e28;
+--chip-fg:#ee9a4d;
+--sel-dim:#b8ab90;
+--sel-accent:#ee9a4d;
+--plus:#b9cf87;
+--star:#ee9a4d;
+--bang:#ff8787;
+--scheme-name:"autumn";
+}

@@ -1,0 +1,27 @@
+/* elalonde.dev colors: summer. Only this file changes between schemes. */
+:root{
+color-scheme:light;
+--bg:#f4ecd8;
+--surface:#ead9ae;
+--rule:#b09566;
+--fg:#2b2a24;
+--bright:#14130f;
+--dim:#5f5a4c;
+--accent:#2a6577;
+--link:#5f5919;
+--warn:#a23b2e;
+--active-line:#2a6577;
+--active-title:#2a6577;
+--active-title-bg:transparent;
+--active-title-pad:0;
+--bar-bg:#2a6577;
+--bar-fg:#f4ecd8;
+--chip-bg:#f4ecd8;
+--chip-fg:#2a6577;
+--sel-dim:#5f5a4c;
+--sel-accent:#2a6577;
+--plus:#3f6b3a;
+--star:#2a6577;
+--bang:#a23b2e;
+--scheme-name:"summer";
+}

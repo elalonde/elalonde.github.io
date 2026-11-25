@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title>elalonde.dev log</title>
+<subtitle>Releases and notes.</subtitle>
+<link rel="self" type="application/atom+xml" href="https://elalonde.dev/log/feed.xml"/>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/"/>
+<id>https://elalonde.dev/log/</id>
+<updated>2026-11-24T00:00:00Z</updated>
+<author><name>Eric Lalonde</name><uri>https://elalonde.dev/</uri></author>
+<entry>
+<title>Puron is now in the COSMIC Store!</title>
+<id>https://elalonde.dev/log/2026-11-24-puron/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-24-puron/"/>
+<updated>2026-11-24T00:00:00Z</updated>
+<category term="note"/>
+<category term="puron"/>
+<summary>Puron is approved for the COSMIC Flatpak repository, so it can be installed from the COSMIC Store.</summary>
+<content type="html">&lt;p&gt;Puron is now in the COSMIC Flatpak repository. System76 reviewed the package and approved it.&lt;/p&gt;
+&lt;p&gt;The COSMIC Flatpak repository is where System76 publishes applets and other Flatpaks for COSMIC that are not suitable for Flathub. The COSMIC Store reads it. For Puron, this means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Puron shows in the COSMIC Store with the other applets, and can be installed from there. A download of the .deb or a build from source is no longer necessary.&lt;/li&gt;
+&lt;li&gt;Updates come through the store. A new release of Puron shows there when the repository has taken it in.&lt;/li&gt;
+&lt;li&gt;The repository builds Puron from a public manifest, for x86_64 and for aarch64. The .deb is for x86_64 only.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Flatpak has version 1.7.0. It reads the same sensors as the .deb, except liquidctl devices. The two packages share their settings, so a move from one to the other keeps every setting and every pinned reading.&lt;/p&gt;
+&lt;p&gt;The pull request is &lt;a rel=&quot;external&quot; href=&quot;https://github.com/pop-os/cosmic-flatpak/pull/421&quot;&gt;pop-os/cosmic-flatpak#421&lt;/a&gt;.&lt;/p&gt;
+</content>
+</entry>
+<entry>
+<title>puron 1.7.0</title>
+<id>https://elalonde.dev/log/2026-11-23-puron-1.7.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-23-puron-1.7.0/"/>
+<updated>2026-11-23T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>Each temperature in the popup is colored by how hot it runs, and the readings have the look of the Settings and About pages.</summary>
+<content type="html">&lt;p&gt;Each temperature in the popup is colored by how hot it runs, and the readings have the look of the Settings and About pages.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: Each temperature in the popup is colored by how hot it runs: in the normal text color while it is cool, in the theme&amp;apos;s warning color when it runs warm, and in the theme&amp;apos;s red when it runs hot. The limits suit each kind of device, so a CPU or a graphics card may run warmer than a drive before it changes color, and a temperature has the same color whether it is shown in Celsius or in Fahrenheit. Only the value is colored, never the name; fan, voltage and power readings keep the normal text color.&lt;/li&gt;&lt;li&gt;added: Each device name in the popup has the icon of its kind of device beside it, such as the CPU, the graphics card, a drive, the Wi-Fi card, a wired network card or a memory module, in that kind&amp;apos;s color.&lt;/li&gt;&lt;li&gt;changed: The readings in the popup now have the look of the Settings and About pages, in the desktop theme&amp;apos;s colors, so that a light and a dark theme both work. Each section heading has a small colored tile with the section&amp;apos;s icon. Each device&amp;apos;s readings sit in a rounded card with a thin divider between two readings, and the fan, voltage and power readings of a section share one card. The readings, their order, their texts and what a click does stay the same, and so does the panel.&lt;/li&gt;&lt;li&gt;changed: The check mark of a pinned reading is in the theme&amp;apos;s accent color, and &amp;quot;Settings&amp;quot; and &amp;quot;About&amp;quot; each have a small icon beside their text.&lt;/li&gt;&lt;li&gt;changed: On the Settings page, the tile of the section &amp;quot;Generic Sensor Providers&amp;quot; now has the same color as the Temperature tile in the popup.&lt;/li&gt;&lt;li&gt;changed: On the Settings page, a long label or state line under a sensor provider&amp;apos;s switch now wraps instead of squeezing the switch.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.7.0&lt;br&gt;sha256: ac528fa183ca14c64f3c03b5783650ee78860a7928c7b13970685fd90e971eb5&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.6.1</title>
+<id>https://elalonde.dev/log/2026-11-22-puron-1.6.1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-22-puron-1.6.1/"/>
+<updated>2026-11-22T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>Puron now speaks Swedish, German, Portuguese (Brazil), French, Spanish and Italian.</summary>
+<content type="html">&lt;p&gt;Puron now speaks Swedish, German, Portuguese (Brazil), French, Spanish and Italian.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: Puron now speaks Swedish, German, Portuguese (Brazil), French, Spanish and Italian: the popup, its settings and its About page are shown in that language when the desktop uses it. A text that a translation lacks is shown in English.&lt;/li&gt;&lt;li&gt;added: Anyone can add a language, and a partial translation is welcome: the section &amp;quot;Translating Puron&amp;quot; of the README says how. A translation that lacks texts never stops Puron from building.&lt;/li&gt;&lt;li&gt;added: Swedish translation by Luna Jernberg (@bittin).&lt;/li&gt;&lt;li&gt;added: The German, Portuguese, French, Spanish and Italian translations, and the Swedish texts of the About page, are machine-assisted; corrections are welcome.&lt;/li&gt;&lt;li&gt;fixed: The applet&amp;apos;s tests pass on a machine whose desktop uses a language other than English: they choose English themselves.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.6.1&lt;br&gt;sha256: efe022d19975305a2c36b856f9154eeeff5aa6f90667cac2cd0822a1e50f7809&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.6.0</title>
+<id>https://elalonde.dev/log/2026-11-20-puron-1.6.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-20-puron-1.6.0/"/>
+<updated>2026-11-20T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>Significant UX improvements, and new flatpak support.</summary>
+<content type="html">&lt;p&gt;Significant UX improvements, and new flatpak support.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: Puron is also built as a Flatpak, with the app ID io.github.elalonde.Puron, for the COSMIC Flatpak repository.&lt;/li&gt;&lt;li&gt;changed: Each pinned temperature on the panel shows an icon for its kind of device, such as the CPU, the graphics card, a drive, the Wi-Fi card, a wired network card or a memory module, so that two pinned temperatures can be told apart by the icon alone.&lt;/li&gt;&lt;li&gt;changed: Puron has its own app icon. COSMIC Settings shows it for the applet in every package, and the panel shows its single-color form when nothing is pinned.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.6.0&lt;br&gt;sha256: 9757a18aece8ee687d1756e2f7df5d21a948f3a33eb1955d82aa54005bde55b8&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.5.0</title>
+<id>https://elalonde.dev/log/2026-11-17-puron-1.5.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-17-puron-1.5.0/"/>
+<updated>2026-11-17T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>The panel button keeps its width when a value gets shorter, so the other sensors and the applets beside Puron do not move.</summary>
+<content type="html">&lt;p&gt;The panel button keeps its width when a value gets shorter, so the other sensors and the applets beside Puron do not move.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;changed: The panel button keeps its width when a value gets shorter, so that the other sensors on the button and the applets beside Puron do not move when, for example, a fan drops from 1234 to 0 rpm.&lt;/li&gt;&lt;li&gt;changed: Each value on the panel button sits in a box as wide as the widest normal value of its kind, such as 888°C for a temperature or 8888 rpm for a fan, and the value is aligned to the right of its box. Most buttons are therefore wider than before.&lt;/li&gt;&lt;li&gt;changed: A box grows when a value needs more digits, such as a fan at 12000 rpm, and keeps that width. It becomes narrow again only when Puron starts, when a setting that changes the value texts or their size changes (the temperature unit, the decimals, showing or hiding a unit, or the panel or dock text size), or when the sensor leaves the panel button.&lt;/li&gt;&lt;li&gt;changed: The same holds on a vertical panel or dock: each box has the same width as on a horizontal panel and is centered in the column.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.5.0&lt;br&gt;sha256: 782b0ad9e3cf0d6b9422cef25a570c41af6272e5fc237a7c30c130ee5a3625ff&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.4.0</title>
+<id>https://elalonde.dev/log/2026-11-17-puron-1.4.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-17-puron-1.4.0/"/>
+<updated>2026-11-17T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>The text on the panel button now follows the size of the panel or dock, and two new settings can hold it at a fixed size.</summary>
+<content type="html">&lt;p&gt;The text on the panel button now follows the size of the panel or dock, and two new settings can hold it at a fixed size.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: Display Options has two new settings, &amp;quot;Panel Text Size&amp;quot; and &amp;quot;Dock Text Size&amp;quot;, for the size of the values on the panel button. The first applies when Puron is on a panel, the second when it is on a dock. Each can hold a fixed size from 10 to 24 px.&lt;/li&gt;&lt;li&gt;changed: By default the text follows the size of the panel or dock (&amp;quot;Match panel size&amp;quot;, &amp;quot;Match dock size&amp;quot;), so that it grows with the icons. On the smallest panel it stays 14 px, as before; on a larger panel or dock it is larger after the update. Choose a fixed size of 14 px to keep the old look.&lt;/li&gt;&lt;li&gt;changed: On a horizontal panel, a text taller than the panel is cut evenly at the panel&amp;apos;s top and bottom edges, instead of making Puron taller than the panel.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.4.0&lt;br&gt;sha256: 3b712de7cdb6ae9d845c8cca620587cec7485bdfc7456befdabc786cbf43e86b&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.9.1</title>
+<id>https://elalonde.dev/log/2026-11-17-jig-0.9.1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-17-jig-0.9.1/"/>
+<updated>2026-11-17T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>Fixes for the trust marks and for &quot;jig report&quot; of 0.9.0, and &quot;jig tag&quot; accepts a review loop that a fix unit closed.</summary>
+<content type="html">&lt;p&gt;Fixes for the trust marks and for &amp;quot;jig report&amp;quot; of 0.9.0, and &amp;quot;jig tag&amp;quot; accepts a review loop that a fix unit closed.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: &amp;quot;jig tag&amp;quot; accepts a closed review loop whose must-fix findings a fix unit applied, with no second review: a row of the table &amp;quot;Closed review loops&amp;quot; may have a fourth cell, the ID of the fix unit.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig run-check&amp;quot;, at the time cap or a stop signal, sends SIGTERM to the process group of the command and waits up to 30 seconds before SIGKILL, so that a cleanup can finish.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig batch&amp;quot; stops with exit 15 on a must-fix or should-fix finding that it cannot count, and names its line.&lt;/li&gt;&lt;li&gt;changed: The templates of &amp;quot;jig new&amp;quot; show each celebration at the top of the reply to the owner&amp;apos;s next message, and not before.&lt;/li&gt;&lt;li&gt;fixed: &amp;quot;jig start&amp;quot; and &amp;quot;jig orch&amp;quot; set all the trust marks of a start with one read and one rename of the state file of Claude Code. A write of a session in between is no longer lost.&lt;/li&gt;&lt;li&gt;fixed: A folder that the list of a start holds twice gets its trust mark. In 0.9.0 it got no mark, and its session waited at the trust dialog.&lt;/li&gt;&lt;li&gt;fixed: &amp;quot;jig report&amp;quot;, for a product that has no branch of the conf&amp;apos;s name yet, reads every origin branch also for the vector checks. In 0.9.0 only the check of the commits of the unit did so.&lt;/li&gt;&lt;li&gt;fixed: The stall check of &amp;quot;jig orch&amp;quot; reads the activity files of the other project in the home of the orchestrator account that the conf file names.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.9.1&lt;br&gt;sha256: dd6f28bafeb29a3e067bc6d8b61aad505ca93d967b8f42fa587a688d28a90f0e&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.9.0</title>
+<id>https://elalonde.dev/log/2026-11-17-jig-0.9.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-17-jig-0.9.0/"/>
+<updated>2026-11-17T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The first release of the line 0.9: jig answers the folder trust dialog of Claude Code before a session starts, and a project can give its sessions more folders.</summary>
+<content type="html">&lt;p&gt;The first release of the line 0.9: jig answers the folder trust dialog of Claude Code before a session starts, and a project can give its sessions more folders.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: jig marks each folder of a session as trusted in the state file of Claude Code before the session starts, also each folder that the session gets with &amp;quot;--add-dir&amp;quot;. Before, a session that jig started could wait at the trust dialog with nobody to answer it. &amp;quot;jig start&amp;quot;, &amp;quot;jig orch&amp;quot; and &amp;quot;jig new&amp;quot; each print a line &amp;quot;trust ACCOUNT: VALUE&amp;quot;.&lt;/li&gt;&lt;li&gt;added: A project can give the sessions of an account more folders in a section &amp;quot;## Directories&amp;quot; of its kickoff record. &amp;quot;jig start&amp;quot; passes them with &amp;quot;--add-dir&amp;quot; and refuses a folder that is not in the approved list of the account.&lt;/li&gt;&lt;li&gt;changed: The supervisor &amp;quot;jig orch&amp;quot; no longer appends the event &amp;quot;hourly update&amp;quot;. An hour with no change still gets its &amp;quot;idle:&amp;quot; line in the updates log of the project.&lt;/li&gt;&lt;li&gt;changed: The supervisor reads &amp;quot;BRANCH&amp;quot; of the conf file at each report poll. After a move to a new version line it fetches the new line and announces only the reports of that line.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig report&amp;quot; accepts a product commit that any origin branch of the product holds when the product has no branch of the conf&amp;apos;s name yet.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig validate prompt&amp;quot; refuses a ROLE section that splits &amp;quot;Spec tag:&amp;quot; over two lines.&lt;/li&gt;&lt;li&gt;changed: The orchestrator templates of &amp;quot;jig new&amp;quot; roll over only when &amp;quot;jig ctx&amp;quot; says so, never at a batch boundary, and upgrade jig at each batch boundary.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.9.0&lt;br&gt;sha256: 196e731d0762806ba29a6e239316c394975899eb2b0dfdbb7297e9fae72de7df&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.8.2</title>
+<id>https://elalonde.dev/log/2026-11-17-jig-0.8.2/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-17-jig-0.8.2/"/>
+<updated>2026-11-17T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The pre-commit hook refuses a commit only for a private term that the commit adds, and a new commit-msg hook checks the commit message.</summary>
+<content type="html">&lt;p&gt;The pre-commit hook refuses a commit only for a private term that the commit adds, and a new commit-msg hook checks the commit message.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: &amp;quot;jig terms check PROJECT&amp;quot; takes two new options: &amp;quot;--staged WORK-TREE&amp;quot; reads only the lines and path names that the staged change adds, and &amp;quot;--message FILE&amp;quot; reads a commit message.&lt;/li&gt;&lt;li&gt;added: A commit-msg hook checks the message of each commit for the private terms. &amp;quot;jig start&amp;quot; and &amp;quot;jig new&amp;quot; install it as they do the pre-commit hook.&lt;/li&gt;&lt;li&gt;changed: The pre-commit hook refuses a commit only for a private term that the commit adds, not for one that the product already held.&lt;/li&gt;&lt;li&gt;changed: The hooks and lint A find the &amp;quot;-dev&amp;quot; clone of a linked work tree in any directory.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.8.2&lt;br&gt;sha256: 0fff7f53e84451ebbfb207a67c40d11b7e31bfb892eb564d707f2aa1d6f0b994&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.3.2</title>
+<id>https://elalonde.dev/log/2026-11-16-puron-1.3.2/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-16-puron-1.3.2/"/>
+<updated>2026-11-16T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>The program is the same as in 1.3.1; only the checks that come with the source tree change.</summary>
+<content type="html">&lt;p&gt;The program is the same as in 1.3.1; only the checks that come with the source tree change.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;changed: The program itself does not change: it is the same as in 1.3.1. Only the checks that come with the source tree change.&lt;/li&gt;&lt;li&gt;changed: The commit-message hook, and tools/lint-a.sh, which checks comments and documentation, refuse more forms of internal reference numbers and tag names.&lt;/li&gt;&lt;li&gt;changed: The commit-message hook accepts one more trailer, &amp;quot;Claude-Session:&amp;quot; followed by a web address on the same line.&lt;/li&gt;&lt;li&gt;changed: One locale test gets ten minutes instead of two, so that it passes on a cold build, which starts from an empty target directory.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.3.2&lt;br&gt;sha256: a020c1d53f2f722da936cf69733cdd56428c8efc7093eec5fda2fa0731d9a94b&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.8.1</title>
+<id>https://elalonde.dev/log/2026-11-16-jig-0.8.1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-16-jig-0.8.1/"/>
+<updated>2026-11-16T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>A fix for the activity file of 0.8.0: the supervisor wrote &quot;idle&quot; while the orchestrator session ran a turn.</summary>
+<content type="html">&lt;p&gt;A fix for the activity file of 0.8.0: the supervisor wrote &amp;quot;idle&amp;quot; while the orchestrator session ran a turn.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;fixed: The screen reader of the supervisor &amp;quot;jig orch&amp;quot; now knows the top rule of the input box of Claude Code also when Claude Code draws the session name into it. In 0.8.0 it did not, so the supervisor wrote &amp;quot;idle&amp;quot; while the orchestrator session ran a turn, and a project that waited on it got a stall line and never a resumed line.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.8.1&lt;br&gt;sha256: 15538601543c88abd5f23d280942f5d34cb92123b1553bb8ff4c916acdda2495&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.8.0</title>
+<id>https://elalonde.dev/log/2026-11-16-jig-0.8.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-16-jig-0.8.0/"/>
+<updated>2026-11-16T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The first release of the line 0.8: an orchestrator can say that it waits on another project and learns when that project stalls, &quot;jig new&quot; takes a product that already exists, and the trace reads Rust and C.</summary>
+<content type="html">&lt;p&gt;The first release of the line 0.8: an orchestrator can say that it waits on another project and learns when that project stalls, &amp;quot;jig new&amp;quot; takes a product that already exists, and the trace reads Rust and C.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: The supervisor &amp;quot;jig orch&amp;quot; writes the activity of its project to a file once a minute: &amp;quot;unit&amp;quot;, &amp;quot;busy&amp;quot;, &amp;quot;idle&amp;quot; or &amp;quot;down&amp;quot;. &amp;quot;jig orch PROJECT status&amp;quot; prints it.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig orch PROJECT wait-on OTHER WHAT&amp;quot; records that the orchestrator waits on another project of the host. When that project has been idle or down for the stall time, 15 minutes unless the host config sets &amp;quot;ORCH_STALL_MINUTES&amp;quot;, the supervisor writes a &amp;quot;stall&amp;quot; event, and a &amp;quot;resumed&amp;quot; event when the project works again.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig orch PROJECT rollover&amp;quot; lets the orchestrator session end itself, so that the supervisor starts the next session. Before, a person had to type &amp;quot;/exit&amp;quot;.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig new PROJECT --existing&amp;quot; sets up a project whose product repository already exists on GitHub. It writes no file into the product.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig trace gen&amp;quot; and lint A read the comments of Rust files and of C files and headers. &amp;quot;jig trace form&amp;quot; names the Rust method or the C function that a change falls in.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig start&amp;quot; accepts a kickoff tag on the ROLE line of an implementer unit while origin holds no spec tag, so a project can run implementer units between its kickoff and its first spec tag.&lt;/li&gt;&lt;li&gt;added: The &amp;quot;CLAUDE.md&amp;quot; that &amp;quot;jig new&amp;quot; writes has a new section, &amp;quot;Commit message standard&amp;quot;. &amp;quot;jig start&amp;quot; refuses an implementer prompt whose ROLE line does not name it and &amp;quot;Comment standard&amp;quot;.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig trace gen&amp;quot; reads &amp;quot;specs/id-map.tsv&amp;quot;, as &amp;quot;jig trace check&amp;quot; does: an old ID in a comment is written into the trace as the new IDs of its row.&lt;/li&gt;&lt;li&gt;changed: The orchestrator template starts a batch detached, so that a rollover leaves it running, and has a new section, &amp;quot;Waiting on another project&amp;quot;.&lt;/li&gt;&lt;li&gt;fixed: When the supervisor loop ends, it looks for forks of its last session at once and again a fork window later (60 seconds unless set), also at a stop. Before, a fork that showed up after a stop was never ended, and the next start ran a second orchestrator beside it. A stop therefore now takes at least the fork window.&lt;/li&gt;&lt;li&gt;fixed: The tests of the orchestrator loop, the release and the status line no longer depend on wall-clock margins.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.8.0&lt;br&gt;sha256: bf1e1a6ac152d67313b6cbd14eb519334072345e15872984b28b8fd72b458e0e&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.7.0</title>
+<id>https://elalonde.dev/log/2026-11-15-jig-0.7.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-15-jig-0.7.0/"/>
+<updated>2026-11-15T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The first release of the line 0.7: heavy checks share a limited number of slots on the host, and a running unit can get a new expected time.</summary>
+<content type="html">&lt;p&gt;The first release of the line 0.7: heavy checks share a limited number of slots on the host, and a running unit can get a new expected time.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: A row of &amp;quot;checks.tsv&amp;quot; may have a fifth column, its weight, &amp;quot;heavy&amp;quot; or &amp;quot;light&amp;quot;. The host config may set &amp;quot;HEAVY_SLOTS&amp;quot;, the number of heavy rows that may run at once on the host. A heavy row in &amp;quot;jig run-check&amp;quot; waits for a free slot, and the wait does not count toward the time cap of the row.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig wait PROJECT ID --expected MINUTES&amp;quot; gives a running unit a new expected time. Every wait that already runs, and a running &amp;quot;jig batch&amp;quot;, follow the new value.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig start&amp;quot; sets &amp;quot;core.hooksPath&amp;quot; of a product clone to &amp;quot;hooks&amp;quot; when the product tracks files in &amp;quot;hooks/&amp;quot; and no git config sets the value yet. It leaves alone a pre-commit hook that the product tracks.&lt;/li&gt;&lt;li&gt;changed: The product clone inside the &amp;quot;-dev&amp;quot; clone, the place of the releases before 0.6, is no longer found by any tool.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig run-check&amp;quot; handles SIGTERM, SIGHUP and SIGINT: it ends the whole process group of the command, frees its slot and exits 128 plus the signal number.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig release prepare&amp;quot; reads every row of &amp;quot;checks.tsv&amp;quot; with the same reader as &amp;quot;jig run-check&amp;quot;. A bad time cap on a row of any account now refuses.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig new&amp;quot; says how to recover when it refuses a product clone with no &amp;quot;-dev&amp;quot; clone beside it.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.7.0&lt;br&gt;sha256: a9ff0a791213ff7ac4f843009037e3eb2adf587adf64b1e1403d8b899caed1d1&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.3.1</title>
+<id>https://elalonde.dev/log/2026-11-14-puron-1.3.1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-14-puron-1.3.1/"/>
+<updated>2026-11-14T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>Third-party libraries are updated to their latest compatible releases.</summary>
+<content type="html">&lt;p&gt;Third-party libraries are updated to their latest compatible releases.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;changed: Third-party libraries are updated to their latest compatible releases, bringing upstream bug fixes.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.3.1&lt;br&gt;sha256: 5e6f03b6414e7e71fe07309394d1a9ef5dee8de04252ab0c527fc2e584b412b9&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.6.0</title>
+<id>https://elalonde.dev/log/2026-11-14-jig-0.6.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-14-jig-0.6.0/"/>
+<updated>2026-11-14T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The first release of the line 0.6: the two clones of a project, the product clone and the &quot;-dev&quot; clone, now sit side by side.</summary>
+<content type="html">&lt;p&gt;The first release of the line 0.6: the two clones of a project, the product clone and the &amp;quot;-dev&amp;quot; clone, now sit side by side.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;changed: The product clone and the &amp;quot;-dev&amp;quot; clone of a project are now siblings in one directory. Before, the product clone was inside the &amp;quot;-dev&amp;quot; clone. The old place still works while no product clone sits beside the &amp;quot;-dev&amp;quot; clone.&lt;/li&gt;&lt;li&gt;changed: One function finds the other clone of a project. &amp;quot;jig trace&amp;quot;, &amp;quot;jig terms&amp;quot;, &amp;quot;jig privacy&amp;quot;, &amp;quot;jig recompute&amp;quot;, &amp;quot;jig report&amp;quot;, &amp;quot;jig release&amp;quot;, &amp;quot;jig upgrade&amp;quot;, &amp;quot;jig start&amp;quot; and lint A all use it.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig start&amp;quot; gives the sessions of the spec writer, the implementer and the reviewer the product clone as an added directory, because it now sits outside the repository that the session works in.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig new&amp;quot; makes the two clones as siblings, and its templates follow the new layout. It refuses, and writes nothing, when a directory already sits at the place of the product clone with no &amp;quot;-dev&amp;quot; clone beside it.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.6.0&lt;br&gt;sha256: b24d33801de022b25520a09c54f669fe5b489effd8082546622ba2c755945fac&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.3.0</title>
+<id>https://elalonde.dev/log/2026-11-13-puron-1.3.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-13-puron-1.3.0/"/>
+<updated>2026-11-13T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>A new switch in Sensor Settings stops lm-sensors from reading drive temperatures, so a disk that it kept awake can spin down.</summary>
+<content type="html">&lt;p&gt;A new switch in Sensor Settings stops lm-sensors from reading drive temperatures, so a disk that it kept awake can spin down.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: Sensor Settings has a new switch, &amp;quot;lm-sensors (drives only)&amp;quot;, under Drive Sensor Providers. It is on by default. Turn it off and lm-sensors stops reading drive temperatures (NVMe drives, and SATA drives with the drivetemp module), so a disk that lm-sensors kept awake can spin down. The other lm-sensors readings stay. The switch has an effect only while lm-sensors is on.&lt;/li&gt;&lt;li&gt;added: The README shows the popup and the panel.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.3.0&lt;br&gt;sha256: aae4e47d6ecb2aa81ffdccef1e8f1e7d6e0a638b41a689debcd5e1a68613065c&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.5.1</title>
+<id>https://elalonde.dev/log/2026-11-13-jig-0.5.1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-13-jig-0.5.1/"/>
+<updated>2026-11-13T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The supervisor keeps the tmux session of the orchestrator across a rollover and a stop, so an attached tmux client stays attached.</summary>
+<content type="html">&lt;p&gt;The supervisor keeps the tmux session of the orchestrator across a rollover and a stop, so an attached tmux client stays attached.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: &amp;quot;jig orch PROJECT status&amp;quot; prints the state of the pane (live, dead or none) and whether the session is the supervisor&amp;apos;s own.&lt;/li&gt;&lt;li&gt;changed: The supervisor &amp;quot;jig orch&amp;quot; keeps the tmux session of the orchestrator when Claude Code exits. It starts the next Claude Code session in the same pane, so a tmux client that is attached stays attached.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig orch PROJECT stop&amp;quot; ends Claude Code in the pane and leaves the tmux session; it never kills the session. The next start uses the same pane.&lt;/li&gt;&lt;li&gt;changed: Before it touches a session, the supervisor tests that the session is its own. &amp;quot;start&amp;quot; refuses a session that is not, and &amp;quot;stop&amp;quot; leaves it as it is.&lt;/li&gt;&lt;li&gt;changed: The orchestrator template of &amp;quot;jig new&amp;quot; asks for a celebration of every release, sized by the version change.&lt;/li&gt;&lt;li&gt;fixed: A Claude Code session that starts again in the same pane no longer takes the context figure of the session before it and rolls over at once.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.5.1&lt;br&gt;sha256: 289616a118114f9e030c90847fe1e21dd6e7ece2cccae6bcb1f916c73db3e910&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.5.0</title>
+<id>https://elalonde.dev/log/2026-11-12-jig-0.5.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-12-jig-0.5.0/"/>
+<updated>2026-11-12T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The first release of the line 0.5: the term check runs before every commit, the supervisor writes its events to a file, and the status line of Claude Code is part of jig.</summary>
+<content type="html">&lt;p&gt;The first release of the line 0.5: the term check runs before every commit, the supervisor writes its events to a file, and the status line of Claude Code is part of jig.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: A pre-commit hook runs the term check before each commit in a product clone. It refuses the commit when the check fails, runs out of time or is missing. &amp;quot;jig start&amp;quot; and &amp;quot;jig new&amp;quot; install the hook.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig orch PROJECT events&amp;quot; prints the events of the supervisor as they come. With &amp;quot;--old&amp;quot; it prints the events of the session before.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig-statusline&amp;quot;, the status line of Claude Code. It shows the user, role, branch, model and effort, then the run time, the 5-hour and weekly use, the health note of the host and the model policy warning.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig tag&amp;quot; and &amp;quot;jig start&amp;quot; take the approval tags of the product stage, &amp;quot;spec-X.Y&amp;quot; and &amp;quot;spec-X.YrM&amp;quot;.&lt;/li&gt;&lt;li&gt;changed: The supervisor &amp;quot;jig orch&amp;quot; no longer types into the session of the orchestrator. It appends each event to the file &amp;quot;events.log&amp;quot;, once and in order.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig new&amp;quot; sets the status line in the Claude Code settings of each account to &amp;quot;jig-statusline&amp;quot;.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;MODEL_POLICY&amp;quot; now comes only from the host config and has no default. &amp;quot;jig new&amp;quot; refuses a host config without it.&lt;/li&gt;&lt;li&gt;changed: &amp;quot;jig trace check&amp;quot; no longer asks for the ledger entry of a release commit, so the check passes inside &amp;quot;jig release prepare&amp;quot;.&lt;/li&gt;&lt;li&gt;changed: The tools of jig no longer ship message-of-the-day lines.&lt;/li&gt;&lt;li&gt;fixed: An inbox file is recorded as announced only after its line is written. A stop between the two now announces the file once at the next start.&lt;/li&gt;&lt;li&gt;fixed: &amp;quot;jig start&amp;quot; refuses a hook path outside the product clone.&lt;/li&gt;&lt;li&gt;fixed: The status line treats a reset time that is not a valid clock time as unknown.&lt;/li&gt;&lt;li&gt;fixed: A tag such as &amp;quot;spec-1.2.3&amp;quot; is no longer read as &amp;quot;spec-1.2&amp;quot;.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.5.0&lt;br&gt;sha256: 743e9bd44221e19c1e109692dd4f17fe696d2edf89c77067792eeeb8606915e1&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>jig 0.4.0</title>
+<id>https://elalonde.dev/log/2026-11-12-jig-0.4.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-12-jig-0.4.0/"/>
+<updated>2026-11-12T00:00:00Z</updated>
+<category term="release"/>
+<category term="jig"/>
+<summary>The first public release: jig now makes its own releases and the releases of the projects that it builds.</summary>
+<content type="html">&lt;p&gt;The first public release: jig now makes its own releases and the releases of the projects that it builds.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: &amp;quot;jig release&amp;quot; prepares a release, publishes it and compares the published files with the staged ones. It waits for green CI and proves the release commit from a clean clone with an offline build of the source archive.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig terms check&amp;quot; looks for private terms in the product, its commit messages and its built files. &amp;quot;jig privacy scan&amp;quot; looks for serials, host names, addresses, UUIDs and MAC addresses in fixtures and captures.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig upgrade&amp;quot; downloads a release, checks it against its SHA256SUMS and installs it. &amp;quot;jig changelog --since&amp;quot; prints the entries after a version.&lt;/li&gt;&lt;li&gt;added: The make targets &amp;quot;version-bump&amp;quot;, &amp;quot;package&amp;quot;, &amp;quot;package-check&amp;quot; and &amp;quot;source-archive&amp;quot; for the product.&lt;/li&gt;&lt;li&gt;added: &amp;quot;jig new&amp;quot; gives a new product a CI workflow that runs &amp;quot;make check&amp;quot; on every push.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/jig/releases/tag/v0.4.0&lt;br&gt;sha256: c8949013dd0027979c6e8939c30224239ace1c619f34d431c13208de004c188a&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.2.0</title>
+<id>https://elalonde.dev/log/2026-11-11-puron-1.2.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-11-puron-1.2.0/"/>
+<updated>2026-11-11T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>The popup now ends with &quot;Settings&quot; and &quot;About&quot;, and &quot;About&quot; opens the new project page.</summary>
+<content type="html">&lt;p&gt;The popup now ends with &amp;quot;Settings&amp;quot; and &amp;quot;About&amp;quot;, and &amp;quot;About&amp;quot; opens the new project page.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;changed: The last two entries of the popup are now &amp;quot;Settings&amp;quot; and then &amp;quot;About&amp;quot; (they were &amp;quot;Go to the Puron homepage&amp;quot; and then &amp;quot;Sensor Settings&amp;quot;).&lt;/li&gt;&lt;li&gt;changed: &amp;quot;About&amp;quot;, and the message that offers the homepage, open the new project page, https://elalonde.dev/projects/puron/.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.2.0&lt;br&gt;sha256: a257d1e6f2be9f01bf8fbf29ba807cddd9e80b735b47c7eb598e14dbaa7fc82f&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>eos has the MIT license</title>
+<id>https://elalonde.dev/log/2026-11-11-eos/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-11-eos/"/>
+<updated>2026-11-11T00:00:00Z</updated>
+<category term="note"/>
+<category term="eos"/>
+<summary>eos is now released under the MIT license.</summary>
+<content type="html">&lt;p&gt;eos is now released under the MIT license. The repository has a LICENSE file, and the README names the license.&lt;/p&gt;
+&lt;p&gt;The commit is &lt;a rel=&quot;external&quot; href=&quot;https://github.com/elalonde/eos/commit/54e9ae0255540fe020e8869613e53047258a67a1&quot;&gt;54e9ae0&lt;/a&gt;.&lt;/p&gt;
+</content>
+</entry>
+<entry>
+<title>puron 1.1.2</title>
+<id>https://elalonde.dev/log/2026-11-09-puron-1.1.2/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-09-puron-1.1.2/"/>
+<updated>2026-11-09T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>Fixes in Sensor Settings, and Puron no longer keeps settings in the current directory.</summary>
+<content type="html">&lt;p&gt;Fixes in Sensor Settings, and Puron no longer keeps settings in the current directory.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;fixed: With every sensor provider switched off, a change in Sensor Settings now updates the panel at once.&lt;/li&gt;&lt;li&gt;fixed: Closing Sensor Settings keeps a poll interval that was typed but not yet confirmed.&lt;/li&gt;&lt;li&gt;fixed: A failed save in Sensor Settings now shows &amp;quot;Settings could not be saved&amp;quot; until a save succeeds.&lt;/li&gt;&lt;li&gt;fixed: Without a user configuration directory, Puron and Sensor Settings no longer read or write settings in the current directory.&lt;/li&gt;&lt;li&gt;fixed: The diagnostics log no longer says a liquidctl run did not start when it started but could not be watched to its end.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.1.2&lt;br&gt;sha256: 4691eaf5c21f1e2184d6b5d45fdd81ad1aea062dca88f04b8a13fa99cd77e103&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.1.1</title>
+<id>https://elalonde.dev/log/2026-11-08-puron-1.1.1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-08-puron-1.1.1/"/>
+<updated>2026-11-08T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>Fixes for pins kept from version 1.0.0 and for clicks in the popup while the readings change.</summary>
+<content type="html">&lt;p&gt;Fixes for pins kept from version 1.0.0 and for clicks in the popup while the readings change.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;fixed: A Maximum or CPU pin kept from version 1.0.0 that waits for lm-sensors now has a line in the popup, &amp;quot;CPU: waiting for lm-sensors&amp;quot;; click it to remove the pin.&lt;/li&gt;&lt;li&gt;fixed: A click in the popup no longer checks another line when the readings change just before the click.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.1.1&lt;br&gt;sha256: 993f9aaba42ef9871916fc76417097f13d8d7d7f1bb0e0c9c311cda439a50fc3&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>puron 1.1.0</title>
+<id>https://elalonde.dev/log/2026-11-08-puron-1.1.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-08-puron-1.1.0/"/>
+<updated>2026-11-08T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>The popup shows every reading at once, grouped by device, and a click on a line puts it on the panel.</summary>
+<content type="html">&lt;p&gt;The popup shows every reading at once, grouped by device, and a click on a line puts it on the panel.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;changed: The popup shows everything at once, in the sections Temperature, Fan, Voltage and Power. Nothing opens or closes any more, so the arrows and the &amp;quot;Group Items&amp;quot; settings are gone.&lt;/li&gt;&lt;li&gt;changed: Temperatures are listed by device: the CPU first, with every CPU reading under it, then GPUs, drives and other chips, each under its name, or the label you set in lm-sensors on a drive&amp;apos;s &amp;quot;Composite&amp;quot; sensor.&lt;/li&gt;&lt;li&gt;changed: A device with several readings also has a &amp;quot;Maximum&amp;quot; line, the highest of them at each poll, and marks one line &amp;quot;(default)&amp;quot;: the CPU&amp;apos;s package reading, a drive&amp;apos;s composite reading, otherwise the first.&lt;/li&gt;&lt;li&gt;changed: A click on a line checks it, and a checked line shows on the panel; several can be checked, and the panel shows them in popup order. A new install checks each &amp;quot;(default)&amp;quot; line. The Maximum that version 1.0.0 pinned moves to the CPU&amp;apos;s default line, once.&lt;/li&gt;&lt;li&gt;changed: With lm-sensors and the &amp;quot;nvme-cli&amp;quot; switch both on, a drive no longer shows the same reading twice: the lm-sensors line stays, and a pin on the other one moves to it.&lt;/li&gt;&lt;li&gt;changed: The check mark is a small fixed size with a gap before the text, and section headings are drawn stronger.&lt;/li&gt;&lt;li&gt;changed: Every line stays on one line. The popup grows to fit, and text over 44 characters is shortened with &amp;quot;…&amp;quot;. A popup taller than its limit scrolls.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.1.0&lt;br&gt;sha256: 6eb130402a858b0c690baf89991149d92f5c7a3bbf4dfff12ade5f4ca3252d93&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>The jig spec is accepted</title>
+<id>https://elalonde.dev/log/2026-11-06-jig/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-06-jig/"/>
+<updated>2026-11-06T00:00:00Z</updated>
+<category term="note"/>
+<category term="jig"/>
+<summary>jig is my build system for software that agents write.</summary>
+<content type="html">&lt;p&gt;jig is my build system for software that agents write. Each project has an orchestrator, a spec writer and an implementer.&lt;/p&gt;
+&lt;p&gt;The first spec had four review rounds. I judged it overengineered and had it written again from the start. The accepted spec has 14 sections and no decision log.&lt;/p&gt;
+&lt;p&gt;Each role is a separate Unix account. I talk to one orchestrator for each project, and each orchestrator has its own tmux session.&lt;/p&gt;
+&lt;p&gt;The shared tools are in one repository with versions. A project upgrades when it is convenient, at the end of a batch of work.&lt;/p&gt;
+&lt;p&gt;I want jig to stay light. It is a build system and nothing more.&lt;/p&gt;
+</content>
+</entry>
+<entry>
+<title>puron 1.0.0</title>
+<id>https://elalonde.dev/log/2026-11-05-puron-1.0.0/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-11-05-puron-1.0.0/"/>
+<updated>2026-11-05T00:00:00Z</updated>
+<category term="release"/>
+<category term="puron"/>
+<summary>The first release: a COSMIC panel applet that shows temperatures, fan speeds, voltages and liquid cooling devices.</summary>
+<content type="html">&lt;p&gt;The first release: a COSMIC panel applet that shows temperatures, fan speeds, voltages and liquid cooling devices.&lt;/p&gt;&lt;p&gt;Changes:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;added: Sensor readings in the COSMIC Panel and Dock: component temperatures (CPU, drives, GPU), fan speeds, voltages and liquid cooling devices.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Source: https://github.com/elalonde/puron/releases/tag/v1.0.0&lt;br&gt;sha256: 4a396ad1ff8ebf1e71519c738a6e20d6a3004608219dfd8eb1c3a8afd85c718d&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Puron starts: a COSMIC rewrite of Freon</title>
+<id>https://elalonde.dev/log/2026-10-20-puron/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-10-20-puron/"/>
+<updated>2026-10-20T00:00:00Z</updated>
+<category term="note"/>
+<category term="puron"/>
+<summary>[SUMMARY]</summary>
+<content type="html">&lt;p&gt;[ENTRY TEXT]&lt;/p&gt;
+</content>
+</entry>
+<entry>
+<title>libsig1 will have the MIT license</title>
+<id>https://elalonde.dev/log/2026-10-18-libsig1/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-10-18-libsig1/"/>
+<updated>2026-10-18T00:00:00Z</updated>
+<category term="note"/>
+<category term="libsig1"/>
+<summary>[SUMMARY]</summary>
+<content type="html">&lt;p&gt;[ENTRY TEXT]&lt;/p&gt;
+</content>
+</entry>
+<entry>
+<title>eos defines and loads its own GDT</title>
+<id>https://elalonde.dev/log/2026-07-21-eos/</id>
+<link rel="alternate" type="text/html" href="https://elalonde.dev/log/2026-07-21-eos/"/>
+<updated>2026-07-21T00:00:00Z</updated>
+<category term="note"/>
+<category term="eos"/>
+<summary>eos no longer runs on the segments that GRUB leaves behind: it defines its own GDT and loads it at boot.</summary>
+<content type="html">&lt;p&gt;eos no longer runs on the segments that GRUB leaves behind. The kernel now defines its own GDT and loads it at boot.&lt;/p&gt;
+&lt;p&gt;The table has three entries: the null descriptor, a code segment and a data segment. Both segments are flat: base 0, with a limit of 4 GB.&lt;/p&gt;
+&lt;p&gt;The loader disables interrupts, runs lgdt, and loads the data selector into ds, es, fs, gs and ss. It sets the stack pointer directly after ss. A far jump then loads the code selector into cs.&lt;/p&gt;
+&lt;p&gt;The commit is &lt;a rel=&quot;external&quot; href=&quot;https://github.com/elalonde/eos/commit/df92949e4bbddb2c0f4279bd5adfac4bc000db63&quot;&gt;df92949&lt;/a&gt;.&lt;/p&gt;
+</content>
+</entry>
+</feed>

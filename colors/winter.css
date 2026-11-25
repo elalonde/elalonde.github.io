@@ -1,0 +1,27 @@
+/* elalonde.dev colors: winter. Only this file changes between schemes. */
+:root{
+color-scheme:dark;
+--bg:#2e3440;
+--surface:#3b4252;
+--rule:#5e81ac;
+--fg:#d8dee9;
+--bright:#eceff4;
+--dim:#81a1c1;
+--accent:#88c0d0;
+--link:#a3be8c;
+--warn:#ebcb8b;
+--active-line:#bf616a;
+--active-title:#88c0d0;
+--active-title-bg:transparent;
+--active-title-pad:0;
+--bar-bg:#88c0d0;
+--bar-fg:#2e3440;
+--chip-bg:#2e3440;
+--chip-fg:#88c0d0;
+--sel-dim:#d8dee9;
+--sel-accent:#88c0d0;
+--plus:#a3be8c;
+--star:#88c0d0;
+--bang:#ebcb8b;
+--scheme-name:"winter \b7  nord";
+}

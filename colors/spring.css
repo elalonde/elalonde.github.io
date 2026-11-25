@@ -1,0 +1,27 @@
+/* elalonde.dev colors: spring. Only this file changes between schemes. */
+:root{
+color-scheme:light;
+--bg:#eef1e6;
+--surface:#ecd9dc;
+--rule:#86a077;
+--fg:#2f3a30;
+--bright:#1a231c;
+--dim:#505d51;
+--accent:#3f6b3a;
+--link:#2f5f93;
+--warn:#a23b3b;
+--active-line:#3f6b3a;
+--active-title:#2f3a30;
+--active-title-bg:#b9d3a8;
+--active-title-pad:0 1ch;
+--bar-bg:#b9d3a8;
+--bar-fg:#2f3a30;
+--chip-bg:#f0e2a0;
+--chip-fg:#2f3a30;
+--sel-dim:#505d51;
+--sel-accent:#3f6b3a;
+--plus:#3f6b3a;
+--star:#2f5f93;
+--bang:#a23b3b;
+--scheme-name:"spring";
+}

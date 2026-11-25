@@ -1,0 +1,27 @@
+/* elalonde.dev colors: solarized-dark. Only this file changes between schemes. */
+:root{
+color-scheme:dark;
+--bg:#002b36;
+--surface:#073642;
+--rule:#586e75;
+--fg:#93a1a1;
+--bright:#eee8d5;
+--dim:#839496;
+--accent:#b58900;
+--link:#2aa198;
+--warn:#ec6a5e;
+--active-line:#b58900;
+--active-title:#b58900;
+--active-title-bg:transparent;
+--active-title-pad:0;
+--bar-bg:#b58900;
+--bar-fg:#002b36;
+--chip-bg:#002b36;
+--chip-fg:#b58900;
+--sel-dim:#93a1a1;
+--sel-accent:#c49500;
+--plus:#2aa198;
+--star:#b58900;
+--bang:#ec6a5e;
+--scheme-name:"solarized dark";
+}

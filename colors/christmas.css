@@ -1,0 +1,27 @@
+/* elalonde.dev colors: christmas. Only this file changes between schemes. */
+:root{
+color-scheme:dark;
+--bg:#1b2a22;
+--surface:#6b2530;
+--rule:#56705e;
+--fg:#ece3cf;
+--bright:#fff8e7;
+--dim:#a9b8a6;
+--accent:#e0b85a;
+--link:#a8d5a2;
+--warn:#f0a59c;
+--active-line:#e0b85a;
+--active-title:#e0b85a;
+--active-title-bg:transparent;
+--active-title-pad:0;
+--bar-bg:#9c2f36;
+--bar-fg:#fff8e7;
+--chip-bg:#e0b85a;
+--chip-fg:#1b2a22;
+--sel-dim:#a9b8a6;
+--sel-accent:#e0b85a;
+--plus:#a8d5a2;
+--star:#e0b85a;
+--bang:#f0a59c;
+--scheme-name:"christmas";
+}
