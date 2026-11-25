@@ -244,6 +244,10 @@ if(!r||e.target.closest("a")||String(getSelection()))return;
 var R=rows();show(R,R.indexOf(r));
 })}
 })();
+/* The mirror on GitHub Pages is the same build. Only there, the status
+   bar names the mirror. Without this, it says [elalonde.dev]. */
+if(location.hostname=="elalonde.github.io")
+[].forEach.call(document.querySelectorAll(".bar .host"),function(h){h.textContent="[elalonde.github.io]"});
 </script>
 
 </body>

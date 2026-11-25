@@ -8,19 +8,14 @@ SUMMARY
 EXPERIENCE
   Member of Technical Staff, Definitive Intelligence (acquired by Groq)
   2022-2023
-    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
 
   Member of Technical Staff, Autonomic (acquired by Ford)      2016-2022
-    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
 
   Sr. Principal Software Engineer, Pivotal                     2015-2016
-    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
 
   Consulting Engineer, Pivotal                                 2013-2015
-    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
 
   Senior Linux Engineer, Axcient                               2009-2013
-    [WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]
 
   R&D Engineer, Sun Microsystems                               2007-2009
     Project Live*: modular software distribution and configuration for
@@ -58,4 +53,4 @@ PATENTS
     execution environment
     US 8,302,077  https://patents.google.com/patent/US8302077B2
 
-elalonde.dev/resume | updated 2026-11-15
+elalonde.dev/resume | updated 2026-11-24

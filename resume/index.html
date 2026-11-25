@@ -136,7 +136,7 @@ main{flex-direction:column;flex-wrap:nowrap}
 </div>
 <div class="cl tap">
 <div class="kv"><span class="k k7">files</span><span class="v v20 ls"><a href="/resume.pdf">resume.pdf</a><a href="/resume.txt">resume.txt</a></span></div>
-<div class="kv"><span class="k k7">updated</span><span class="v v20">2026-11-15</span></div>
+<div class="kv"><span class="k k7">updated</span><span class="v v20">2026-11-24</span></div>
 </div>
 </div>
 </section>
@@ -175,11 +175,11 @@ main{flex-direction:column;flex-wrap:nowrap}
 <div class="t"><span>experience</span></div>
 <div class="b f">
 <p>16 years of experience in userland systems development.</p>
-<div class="kv"><span class="k k13">2022–2023</span><div class="v v36 cl"><span class="hi">Member of Technical Staff, Definitive Intelligence (acquired by Groq)</span><span>[WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]</span></div></div>
-<div class="kv"><span class="k k13">2016–2022</span><div class="v v36 cl"><span class="hi">Member of Technical Staff, Autonomic (acquired by Ford)</span><span>[WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]</span></div></div>
-<div class="kv"><span class="k k13">2015–2016</span><div class="v v36 cl"><span class="hi">Sr. Principal Software Engineer, Pivotal</span><span>[WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]</span></div></div>
-<div class="kv"><span class="k k13">2013–2015</span><div class="v v36 cl"><span class="hi">Consulting Engineer, Pivotal</span><span>[WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]</span></div></div>
-<div class="kv"><span class="k k13">2009–2013</span><div class="v v36 cl"><span class="hi">Senior Linux Engineer, Axcient</span><span>[WHAT YOU BUILT AND THE RESULT, ONE OR TWO LINES]</span></div></div>
+<div class="kv"><span class="k k13">2022–2023</span><div class="v v36 cl"><span class="hi">Member of Technical Staff, Definitive Intelligence (acquired by Groq)</span></div></div>
+<div class="kv"><span class="k k13">2016–2022</span><div class="v v36 cl"><span class="hi">Member of Technical Staff, Autonomic (acquired by Ford)</span></div></div>
+<div class="kv"><span class="k k13">2015–2016</span><div class="v v36 cl"><span class="hi">Sr. Principal Software Engineer, Pivotal</span></div></div>
+<div class="kv"><span class="k k13">2013–2015</span><div class="v v36 cl"><span class="hi">Consulting Engineer, Pivotal</span></div></div>
+<div class="kv"><span class="k k13">2009–2013</span><div class="v v36 cl"><span class="hi">Senior Linux Engineer, Axcient</span></div></div>
 <div class="kv"><span class="k k13">2007–2009</span><div class="v v36 cl"><span class="hi">R&amp;D Engineer, Sun Microsystems</span><span>Project Live*: modular software distribution and configuration for data-center systems.</span></div></div>
 </div>
 </section>
@@ -245,6 +245,10 @@ if(!r||e.target.closest("a")||String(getSelection()))return;
 var R=rows();show(R,R.indexOf(r));
 })}
 })();
+/* The mirror on GitHub Pages is the same build. Only there, the status
+   bar names the mirror. Without this, it says [elalonde.dev]. */
+if(location.hostname=="elalonde.github.io")
+[].forEach.call(document.querySelectorAll(".bar .host"),function(h){h.textContent="[elalonde.github.io]"});
 </script>
 
 </body>

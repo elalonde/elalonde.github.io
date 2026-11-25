@@ -155,8 +155,8 @@ main{flex-direction:column;flex-wrap:nowrap}
 <div class="row"><span class="wd">Sun</span><span class="wf"><span class="wx" role="img" aria-label="snow" title="snow">🌨️</span></span><span class="wt">36°F</span><span class="wt d">33°F</span></div>
 <div class="row"><span class="wd">Mon</span><span class="wf"><span class="wx" role="img" aria-label="cloudy" title="cloudy">☁️</span></span><span class="wt">37°F</span><span class="wt d">30°F</span></div>
 <div class="row"><span class="wd">Tue</span><span class="wf"><span class="wx" role="img" aria-label="cloudy" title="cloudy">☁️</span></span><span class="wt">38°F</span><span class="wt d">32°F</span></div>
-<div class="row"><span class="wd">Wed</span><span class="wf"><span class="wx" role="img" aria-label="light rain" title="light rain">🌧️</span></span><span class="wt">51°F</span><span class="wt d">38°F</span></div>
-<div class="row"><span class="wd">Thu</span><span class="wf"><span class="wx" role="img" aria-label="light rain" title="light rain">🌧️</span></span><span class="wt">43°F</span><span class="wt d">39°F</span></div>
+<div class="row"><span class="wd">Wed</span><span class="wf"><span class="wx" role="img" aria-label="cloudy" title="cloudy">☁️</span></span><span class="wt">49°F</span><span class="wt d">38°F</span></div>
+<div class="row"><span class="wd">Thu</span><span class="wf"><span class="wx" role="img" aria-label="light rain" title="light rain">🌧️</span></span><span class="wt">46°F</span><span class="wt d">40°F</span></div>
 <div class="row"><span class="wd">Fri</span><span class="wf"><span class="wx" role="img" aria-label="drizzle" title="drizzle">🌦️</span></span><span class="wt">45°F</span><span class="wt d">38°F</span></div>
 <div class="row"><span class="wd">Sat</span><span class="wf"><span class="wx" role="img" aria-label="drizzle" title="drizzle">🌦️</span></span><span class="wt">40°F</span><span class="wt d">36°F</span></div>
 </div>
@@ -242,6 +242,10 @@ if(!r||e.target.closest("a")||String(getSelection()))return;
 var R=rows();show(R,R.indexOf(r));
 })}
 })();
+/* The mirror on GitHub Pages is the same build. Only there, the status
+   bar names the mirror. Without this, it says [elalonde.dev]. */
+if(location.hostname=="elalonde.github.io")
+[].forEach.call(document.querySelectorAll(".bar .host"),function(h){h.textContent="[elalonde.github.io]"});
 </script>
 
 </body>
