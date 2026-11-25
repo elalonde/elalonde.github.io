@@ -31,7 +31,7 @@ main.z{flex-direction:column;flex-wrap:nowrap}
 .r600{flex:999 1 600px}.r560{flex:999 1 560px}
 .r600,.r560{border-left:1px solid var(--rule)}
 .pane{display:flex;flex-direction:column;padding:0 0 var(--gap)}
-.grow{flex:1 1 auto}
+.grow{flex:1 1 auto}.gl:last-child{flex:1 1 auto}
 .t{display:flex;align-items:center;column-gap:1ch;color:var(--dim)}
 .t::before,.t::after{content:"";height:1px;background:var(--rule)}
 .t::before{flex:0 0 2ch}.t::after{flex:1 1 auto}
@@ -139,7 +139,7 @@ main{flex-direction:column;flex-wrap:nowrap}
 </div>
 </div>
 </section>
-<section aria-label="recent projects" class="pane o3">
+<section aria-label="recent projects" class="pane gl o3">
 <div class="t"><span>recent projects</span></div>
 <div class="cl">
 <div class="row prow"><span class="pn"><a href="/projects/libsig1/">libsig1</a></span><span class="pd">Signal linked-device client library in C. MIT license.</span></div>
@@ -148,19 +148,21 @@ main{flex-direction:column;flex-wrap:nowrap}
 <div class="row prow"><span class="pn"><a href="/projects/jig/">jig</a></span><span class="pd">Build system for software that agents write.</span></div>
 </div>
 </section>
+<!--weather-->
 <section aria-label="my weather" class="pane grow o4">
 <div class="t"><span>my weather</span></div>
 <div class="cl">
 <div class="row hd"><span class="wd">day</span><span class="wf">forecast</span><span class="wt">high</span><span class="wt">low</span></div>
-<div class="row"><span class="wd">Sun</span><span class="wf"><span class="wx" role="img" aria-label="snow" title="snow">🌨️</span></span><span class="wt">36°F</span><span class="wt d">33°F</span></div>
-<div class="row"><span class="wd">Mon</span><span class="wf"><span class="wx" role="img" aria-label="cloudy" title="cloudy">☁️</span></span><span class="wt">37°F</span><span class="wt d">30°F</span></div>
 <div class="row"><span class="wd">Tue</span><span class="wf"><span class="wx" role="img" aria-label="cloudy" title="cloudy">☁️</span></span><span class="wt">38°F</span><span class="wt d">32°F</span></div>
 <div class="row"><span class="wd">Wed</span><span class="wf"><span class="wx" role="img" aria-label="cloudy" title="cloudy">☁️</span></span><span class="wt">49°F</span><span class="wt d">38°F</span></div>
 <div class="row"><span class="wd">Thu</span><span class="wf"><span class="wx" role="img" aria-label="light rain" title="light rain">🌧️</span></span><span class="wt">46°F</span><span class="wt d">40°F</span></div>
 <div class="row"><span class="wd">Fri</span><span class="wf"><span class="wx" role="img" aria-label="drizzle" title="drizzle">🌦️</span></span><span class="wt">45°F</span><span class="wt d">38°F</span></div>
 <div class="row"><span class="wd">Sat</span><span class="wf"><span class="wx" role="img" aria-label="drizzle" title="drizzle">🌦️</span></span><span class="wt">40°F</span><span class="wt d">36°F</span></div>
+<div class="row"><span class="wd">Sun</span><span class="wf"><span class="wx" role="img" aria-label="light rain" title="light rain">🌧️</span></span><span class="wt">40°F</span><span class="wt d">37°F</span></div>
+<div class="row"><span class="wd">Mon</span><span class="wf"><span class="wx" role="img" aria-label="heavy drizzle" title="heavy drizzle">🌦️</span></span><span class="wt">41°F</span><span class="wt d">37°F</span></div>
 </div>
 </section>
+<!--/weather-->
 </div>
 <div class="col r600">
 <article class="pane act grow">
